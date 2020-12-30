@@ -21,4 +21,5 @@ function play(messageEvent){
 }
 onmessage = messageEvent => {
 	onmessage = play;
+	postMessage(null);
 };
