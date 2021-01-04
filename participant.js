@@ -1,5 +1,5 @@
 'use strict'
-function play(messageEvent){
+function tock(messageEvent){
 	let length = (messageEvent.data.length/2) - 2;
 	let lengthFull = messageEvent.data.length - 1;	// Do not count opposite store.
 	// Go from right.
@@ -20,6 +20,6 @@ function play(messageEvent){
 	}
 }
 onmessage = messageEvent => {
-	onmessage = play;
+	onmessage = tock;
 	postMessage(null);
 };
