@@ -1,7 +1,7 @@
 'use strict'
 ParticipantHelper.init = data => {
 	postMessage(null);
-};
+}
 ParticipantHelper.onmessage = data => {
 	let length = (data.length/2) - 2;
 	let lengthFull = data.length - 1;	// Do not count opposite store.
